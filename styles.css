@@ -1,0 +1,212 @@
+/* @use "components"; */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+/* @mixin font-title-styles {
+    font-size: 1.7rem;
+    font-weight: 600;
+} */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(22, 22, 22);
+  overflow-x: hidden;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
+  min-width: 100vw;
+}
+
+.nav {
+  display: flex;
+  background-color: rgb(14, 26, 69);
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  border-bottom: solid 3px rgb(3, 10, 34);
+}
+.nav .nav-logo {
+  display: flex;
+  height: 2rem;
+  background-color: cyan;
+  max-width: 7rem;
+}
+.nav .nav-menu {
+  display: flex;
+}
+.nav .nav-menu ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 2rem;
+}
+.nav .nav-menu ul li {
+  list-style: none;
+}
+.nav .nav-menu ul li a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+.nav .nav-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.sec-about-me {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+  margin-top: 5rem;
+}
+.sec-about-me .main-about-me span {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.sec-about-me .main-about-me span .span {
+  color: red;
+}
+.sec-about-me .separator {
+  height: 4rem;
+  width: 100%;
+}
+.sec-about-me .about-me-text h3 {
+  color: rgb(168, 87, 213);
+  font-size: 1.3rem;
+}
+.sec-about-me .about-me-text span {
+  color: #fff;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+.sec-about-me .about-me-text .separator-2 {
+  height: 1.5rem;
+}
+
+.about-me-education .about-me-title {
+  font-size: 1.3rem;
+  color: rgb(168, 87, 213);
+}
+.about-me-education ul {
+  padding: 0;
+}
+.about-me-education ul .about-me-list {
+  list-style: none;
+}
+.about-me-education ul .about-me-list h4 {
+  font-size: 1rem;
+  color: rgb(168, 87, 213);
+}
+.about-me-education ul .about-me-list p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.sec-my-skills {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+  padding-top: 0;
+}
+.sec-my-skills .intro-skills h3 {
+  color: rgb(168, 87, 213);
+  font-size: 1.3rem;
+}
+.sec-my-skills .skills-cards {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  border-top: solid 1px #ddd;
+}
+.sec-my-skills .skills-cards .skills-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-my-skills .skills-cards .skills-col .description {
+  font-size: 0.9rem;
+}
+.sec-my-skills .skills-cards .skills-col i {
+  display: flex;
+  justify-self: flex-end;
+  font-size: 2.2rem;
+}
+
+.sec-my-projects {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+}
+.sec-my-projects .intro-projects {
+  color: #fff;
+}
+.sec-my-projects .intro-projects h3 {
+  color: rgb(168, 87, 213);
+  font-size: 1.3rem;
+}
+
+.sec-contact {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+}
+.sec-contact .contact-text h3 {
+  color: rgb(168, 87, 213);
+  font-size: 1.3rem;
+}
+.sec-contact .contact-text ul {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  padding: 0;
+  gap: 2rem;
+  /* .separator-bar {
+      display: flex;
+      align-self: center;
+      background-color: #fff;
+      width: 20px;
+      height: 10px;
+  } */
+}
+.sec-contact .contact-text ul li {
+  list-style: none;
+}
+.sec-contact .contact-text ul li a {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.sec-contact .contact-text ul li i {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  font-size: 2.2rem;
+}
+
+@media (max-width: 1080px) {
+  .sec-about-me .about-me-text {
+    /* h3 {
+        font-size: 1rem;
+    } */
+  }
+  .sec-about-me .about-me-text span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 625px) {
+  .nav {
+    display: none;
+  }
+  .sec-about-me {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

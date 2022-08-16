@@ -1,0 +1,232 @@
+@mixin section-display {
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+    padding: 3rem;
+}
+
+/* @mixin font-title-styles {
+    font-size: 1.7rem;
+    font-weight: 600;
+} */
+
+body {
+    padding: 0;
+    margin:0;
+    background-color: rgb(22, 22, 22);  
+    overflow-x: hidden;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    min-width: 100vw;
+}
+
+.nav {
+    display: flex;
+    background-color: rgb(14, 26, 69);
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    border-bottom: solid 3px rgb(3, 10, 34);
+    .nav-logo {
+        display: flex;
+        height: 2rem;
+        background-color: cyan;
+        max-width: 7rem;
+    }
+
+    .nav-menu {
+        display: flex;
+        ul {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            gap: 2rem;
+            li {
+                list-style: none;
+                a {
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: 400;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec-about-me {
+    @include section-display();
+    margin-top: 5rem;
+    .main-about-me {
+        span {
+            color:#fff;
+            font-size: 2rem;
+            line-height: 3rem;
+            .span {
+                color: red;
+            }
+        }
+    }
+    .separator {
+        height: 4rem;
+        width: 100%;
+    }
+
+    .about-me-text {
+        h3 {
+            color: rgb(168,87,213);
+            font-size: 1.3rem;
+        }
+        span {
+            color: #fff;
+            line-height: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .separator-2 {
+            height: 1.5rem;
+        }
+    }
+}
+
+.about-me-education {
+    .about-me-title {   
+        font-size: 1.3rem;
+        color: rgb(168,87,213)
+    }
+    ul {
+        padding: 0;
+        .about-me-list {
+            list-style: none;
+            h4 {
+                font-size: 1rem;
+                color: rgb(168,87,213);
+            }
+            p {
+                font-size: 0.9rem;
+                color: #fff
+            }
+        }
+    }
+}
+
+
+.sec-my-skills {
+    @include section-display();
+    padding-top: 0;
+    .intro-skills {
+        h3 {
+            color: rgb(168,87,213);
+            font-size: 1.3rem;
+        }
+    }
+
+    .skills-cards {
+        display: flex;
+        color: #fff;
+        justify-content: space-between;
+        border-top: solid 1px #ddd;
+
+        .skills-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .description {
+                font-size: 0.9rem
+            }
+            i {
+                display: flex;
+                justify-self: flex-end;
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+
+.sec-my-projects {
+    @include section-display();
+
+    .intro-projects {
+        color: #fff;
+        h3 {
+            color: rgb(168,87,213);
+            font-size: 1.3rem
+        }
+    }
+}
+
+.sec-contact {
+    @include section-display;
+    .contact-text {
+        h3 {
+            color: rgb(168,87,213);
+            font-size: 1.3rem;
+        }
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 1rem;
+            padding: 0;
+            gap: 2rem;
+            li {
+                list-style: none;
+                a {
+                    font-size: 0.9rem;
+                    color: #fff;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+                i {
+                    margin-top: 0.5rem;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 2.2rem;
+                }
+            }
+
+            /* .separator-bar {
+                display: flex;
+                align-self: center;
+                background-color: #fff;
+                width: 20px;
+                height: 10px;
+            } */
+
+            
+        }
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .sec-about-me {
+        .about-me-text {
+            /* h3 {
+                font-size: 1rem;
+            } */
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 625px) {
+    .nav {
+        display: none;
+    }
+
+    .sec-about-me {
+        margin: 0;
+    }
+}
