@@ -162,7 +162,7 @@ html {
 .sec-my-projects .intro-projects a:hover {
   text-decoration: underline;
 }
-.sec-my-projects .intro-projects div img {
+.sec-my-projects .intro-projects div .project-previsualization {
   border-radius: 10x;
   width: 25rem;
   height: 15rem;
