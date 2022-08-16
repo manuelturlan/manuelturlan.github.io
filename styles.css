@@ -162,10 +162,19 @@ html {
 .sec-my-projects .intro-projects a:hover {
   text-decoration: underline;
 }
-.sec-my-projects .intro-projects div .project-previsualization {
-  border-radius: 10x;
-  width: 25rem;
-  height: 15rem;
+.sec-my-projects .intro-projects .weather-img {
+  width: 20rem;
+  height: 10rem;
+  background-image: url("/weather-app-previsualization.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sec-my-projects .intro-projects .movie-img {
+  width: 20rem;
+  height: 10rem;
+  background-image: url("/movie-app-previsualization.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .sec-contact {

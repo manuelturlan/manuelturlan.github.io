@@ -171,12 +171,19 @@ html {
                 text-decoration: underline;
             }
         }
-        div {
-            .project-previsualization {
-                border-radius: 10x;
-                width: 25rem;
-                height: 15rem;
-            }
+        .weather-img {
+            width: 20rem;
+            height: 10rem;
+            background-image: url('/weather-app-previsualization.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .movie-img {
+            width: 20rem;
+            height: 10rem;
+            background-image: url('/movie-app-previsualization.png');
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }
