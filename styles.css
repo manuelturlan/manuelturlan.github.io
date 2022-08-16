@@ -141,6 +141,7 @@ html {
   max-width: 992px;
   margin: auto;
   padding: 3rem;
+  padding-bottom: 0;
 }
 .sec-my-projects .intro-projects {
   color: #fff;
@@ -148,6 +149,23 @@ html {
 .sec-my-projects .intro-projects h3 {
   color: rgb(168, 87, 213);
   font-size: 1.3rem;
+}
+.sec-my-projects .intro-projects p {
+  color: #fff;
+  font-weight: 400;
+}
+.sec-my-projects .intro-projects a {
+  text-decoration: none;
+  color: rgb(168, 87, 213);
+  font-weight: 600;
+}
+.sec-my-projects .intro-projects a:hover {
+  text-decoration: underline;
+}
+.sec-my-projects .intro-projects div img {
+  border-radius: 10x;
+  width: 25rem;
+  height: 15rem;
 }
 
 .sec-contact {

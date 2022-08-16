@@ -152,12 +152,31 @@ html {
 
 .sec-my-projects {
     @include section-display();
-
+    padding-bottom: 0;
     .intro-projects {
         color: #fff;
         h3 {
             color: rgb(168,87,213);
             font-size: 1.3rem
+        }
+        p {
+            color: #fff;
+            font-weight: 400;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(168,87,213);
+            font-weight: 600;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        div {
+            img {
+                border-radius: 10x;
+                width: 25rem;
+                height: 15rem;
+            }
         }
     }
 }
