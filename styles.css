@@ -1,19 +1,15 @@
 /* @use "components"; */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-/* @mixin font-title-styles {
-    font-size: 1.7rem;
-    font-weight: 600;
-} */
 body {
   padding: 0;
   margin: 0;
   background-color: rgb(22, 22, 22);
-  overflow-x: hidden;
 }
 
 html {
   font-family: "Ubuntu", sans-serif;
   min-width: 100vw;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -90,6 +86,7 @@ html {
   margin: auto;
   padding: 3rem;
   margin-top: 5rem;
+  padding-right: 0;
 }
 .sec-about-me .main-about-me span {
   color: #fff;
@@ -126,17 +123,17 @@ html {
   height: 1.5rem;
 }
 @media (max-width: 1050px) {
-  .sec-about-me .about-me-text {
+  .sec-about-me {
     width: 90%;
   }
 }
 @media (max-width: 630px) {
-  .sec-about-me .about-me-text {
+  .sec-about-me {
     width: 80%;
   }
 }
 @media (max-width: 350px) {
-  .sec-about-me .about-me-text {
+  .sec-about-me {
     width: 70%;
   }
 }
@@ -181,6 +178,7 @@ html {
   margin: auto;
   padding: 3rem;
   padding-top: 0;
+  padding-right: 0;
 }
 .sec-my-skills .intro-skills h3 {
   color: rgb(168, 87, 213);
@@ -232,6 +230,21 @@ html {
     border: none;
   }
 }
+@media (max-width: 1050px) {
+  .sec-my-skills {
+    width: 90%;
+  }
+}
+@media (max-width: 630px) {
+  .sec-my-skills {
+    width: 80%;
+  }
+}
+@media (max-width: 350px) {
+  .sec-my-skills {
+    width: 70%;
+  }
+}
 
 .sec-my-projects {
   width: 100%;
@@ -239,6 +252,7 @@ html {
   margin: auto;
   padding: 3rem;
   padding-bottom: 0;
+  padding-right: 0;
 }
 .sec-my-projects .intro-projects {
   color: #fff;
@@ -266,7 +280,7 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .sec-my-projects .intro-projects .weather-img {
     display: none;
   }
@@ -278,7 +292,7 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .sec-my-projects .intro-projects .movie-img {
     display: none;
   }
@@ -346,6 +360,7 @@ html {
     display: flex;
     flex-direction: column;
     border: none;
+    width: 70%;
   }
 }
 

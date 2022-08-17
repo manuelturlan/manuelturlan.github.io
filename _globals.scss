@@ -5,21 +5,16 @@
     padding: 3rem;
 }
 
-/* @mixin font-title-styles {
-    font-size: 1.7rem;
-    font-weight: 600;
-} */
-
 body {
     padding: 0;
     margin:0;
     background-color: rgb(22, 22, 22);  
-    overflow-x: hidden;
 }
 
 html {
     font-family: 'Ubuntu', sans-serif;
     min-width: 100vw;
+    overflow-x: hidden;
 }
 
 .nav {
@@ -117,6 +112,7 @@ html {
         .separator-2 {
             height: 1.5rem;
         }
+    }
         @media (max-width: 1050px) {
             width: 90%;
         }
@@ -126,7 +122,7 @@ html {
         @media (max-width: 350px) {
             width: 70%;
         }
-    }
+        padding-right: 0;
 }
 
 .about-me-education {
@@ -207,6 +203,16 @@ html {
             border: none;
         }  
     }
+    @media (max-width: 1050px) {
+        width: 90%;
+    }
+    @media (max-width: 630px) {
+        width: 80%;
+    }
+    @media (max-width: 350px) {
+        width: 70%;
+    }
+    padding-right: 0;
 }
 
 .sec-my-projects {
@@ -236,7 +242,7 @@ html {
             background-image: url('/weather-app-previsualization.png');
             background-size: contain;
             background-repeat: no-repeat;
-            @media (max-width: 350px) {
+            @media (max-width: 380px) {
                 display: none;
             }
         }
@@ -246,7 +252,7 @@ html {
             background-image: url('/movie-app-previsualization.png');
             background-size: contain;
             background-repeat: no-repeat;
-            @media (max-width: 350px) {
+            @media (max-width: 380px) {
                 display: none;
             }
         }
@@ -260,6 +266,7 @@ html {
     @media (max-width: 350px) {
         width: 70%;
     }
+    padding-right: 0;
 }
 
 .sec-contact {
@@ -302,6 +309,7 @@ html {
         display: flex;
         flex-direction: column;
         border: none;
+        width: 70%;
     }  
 }
 
