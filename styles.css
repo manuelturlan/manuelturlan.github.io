@@ -50,8 +50,38 @@ html {
   text-decoration: none;
   font-weight: 400;
 }
+@media (max-width: 600px) {
+  .nav .nav-menu ul li a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 530px) {
+  .nav .nav-menu ul li a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 450px) {
+  .nav .nav-menu ul li a {
+    font-size: 0.7rem;
+  }
+}
 .nav .nav-menu ul li a:hover {
   text-decoration: underline;
+}
+@media (max-width: 450px) {
+  .nav .nav-menu ul {
+    gap: 1rem;
+  }
+}
+@media (max-width: 365px) {
+  .nav .nav-menu ul {
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 330px) {
+  .nav {
+    display: none;
+  }
 }
 
 .sec-about-me {
@@ -69,6 +99,16 @@ html {
 .sec-about-me .main-about-me span .span {
   color: red;
 }
+@media (max-width: 430px) {
+  .sec-about-me .main-about-me span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 340px) {
+  .sec-about-me .main-about-me {
+    width: 70%;
+  }
+}
 .sec-about-me .separator {
   height: 4rem;
   width: 100%;
@@ -84,6 +124,21 @@ html {
 }
 .sec-about-me .about-me-text .separator-2 {
   height: 1.5rem;
+}
+@media (max-width: 1050px) {
+  .sec-about-me .about-me-text {
+    width: 90%;
+  }
+}
+@media (max-width: 630px) {
+  .sec-about-me .about-me-text {
+    width: 80%;
+  }
+}
+@media (max-width: 350px) {
+  .sec-about-me .about-me-text {
+    width: 70%;
+  }
 }
 
 .about-me-education .about-me-title {
@@ -103,6 +158,21 @@ html {
 .about-me-education ul .about-me-list p {
   font-size: 0.9rem;
   color: #fff;
+}
+@media (max-width: 1050px) {
+  .about-me-education {
+    width: 90%;
+  }
+}
+@media (max-width: 630px) {
+  .about-me-education {
+    width: 80%;
+  }
+}
+@media (max-width: 350px) {
+  .about-me-education {
+    width: 70%;
+  }
 }
 
 .sec-my-skills {
@@ -130,10 +200,37 @@ html {
 .sec-my-skills .skills-cards .skills-col .description {
   font-size: 0.9rem;
 }
+@media (max-width: 535px) {
+  .sec-my-skills .skills-cards .skills-col .description {
+    font-size: 0.7rem;
+  }
+}
 .sec-my-skills .skills-cards .skills-col i {
   display: flex;
   justify-self: flex-end;
   font-size: 2.2rem;
+}
+@media (max-width: 590px) {
+  .sec-my-skills .skills-cards .skills-col i {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1060px) {
+  .sec-my-skills .skills-cards {
+    width: 90%;
+  }
+}
+@media (max-width: 630px) {
+  .sec-my-skills .skills-cards {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .sec-my-skills .skills-cards {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
 }
 
 .sec-my-projects {
@@ -169,12 +266,37 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media (max-width: 350px) {
+  .sec-my-projects .intro-projects .weather-img {
+    display: none;
+  }
+}
 .sec-my-projects .intro-projects .movie-img {
   width: 20rem;
   height: 10rem;
   background-image: url("/movie-app-previsualization.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media (max-width: 350px) {
+  .sec-my-projects .intro-projects .movie-img {
+    display: none;
+  }
+}
+@media (max-width: 1050px) {
+  .sec-my-projects {
+    width: 90%;
+  }
+}
+@media (max-width: 630px) {
+  .sec-my-projects {
+    width: 80%;
+  }
+}
+@media (max-width: 350px) {
+  .sec-my-projects {
+    width: 70%;
+  }
 }
 
 .sec-contact {
@@ -193,13 +315,6 @@ html {
   margin-top: 1rem;
   padding: 0;
   gap: 2rem;
-  /* .separator-bar {
-      display: flex;
-      align-self: center;
-      background-color: #fff;
-      width: 20px;
-      height: 10px;
-  } */
 }
 .sec-contact .contact-text ul li {
   list-style: none;
@@ -216,24 +331,44 @@ html {
   justify-content: center;
   font-size: 2.2rem;
 }
+@media (max-width: 1060px) {
+  .sec-contact {
+    width: 90%;
+  }
+}
+@media (max-width: 630px) {
+  .sec-contact {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .sec-contact {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+}
 
-@media (max-width: 1080px) {
-  .sec-about-me .about-me-text {
-    /* h3 {
-        font-size: 1rem;
-    } */
-  }
-  .sec-about-me .about-me-text span {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 625px) {
-  .nav {
-    display: none;
-  }
-  .sec-about-me {
-    margin: 0;
-  }
-}
+/* @media (max-width: 1080px) {
+    .sec-about-me {
+        .about-me-text {
+            h3 {
+                font-size: 1rem;
+            }
+            span {
+                font-size: auto;
+            }
+        }
+    }
+} */
+/* @media (max-width: 625px) {
+    .nav {
+        display: none;
+    }
+
+    .sec-about-me {
+        margin: 0;
+    }
+} */
 
 /*# sourceMappingURL=styles.css.map */
